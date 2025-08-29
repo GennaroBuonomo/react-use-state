@@ -35,8 +35,15 @@ function App() {
   return (
   <div className="container my-5">
     <div className="row">
-      
-      <div className="col-12">buttom</div>
+       <div className="col-12">
+      {languages.map((linguage) => {
+        return(
+       
+          <div className="btn btn-primary me-3">{linguage.title}</div>
+        
+        );
+      })}
+      </div>
     </div>
   </div>
   );
