@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Header from "./Components/Header";
 
 const languages = [
   {
@@ -34,25 +35,33 @@ const languages = [
 ];
 
 function App() {
-  const [Language,setLanguage] = useState(languages[0])
+  const [language,setLanguage] = useState(languages[0])
   return (
+    <>
+    <Header/>
   <div className="container my-5">
     <div className="row">
        <div className="col-12">
-      {languages.map((linguage) => {
+       {languages.map((language) => {
         return(
-          <div className="btn btn-primary me-3">{linguage.title}</div>
+          <div className="btn btn-primary me-3"
+           onClick={() => setLanguage(language)}
+           key={language.id}
+           >
+            {language.title}
+            </div>
         );
       })}
       </div>
       <div className="col-12 mt-4">
        <div className="card p-3">
-         <h2>HTML</h2>
-         <p>HTML (HyperText Markup Language) è il linguaggio standard per creare pagine e applicazioni web. Struttura il contenuto web e fornisce elementi di base come titoli, paragrafi e immagini.</p>
+         <h2>{language.title}</h2>
+         <p>{language.description}</p>
        </div>
       </div>
     </div>
   </div>
+  </>
   );
 }
 
