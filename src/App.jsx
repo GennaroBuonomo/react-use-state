@@ -38,11 +38,13 @@ function App() {
        <div className="col-12">
       {languages.map((linguage) => {
         return(
-       
           <div className="btn btn-primary me-3">{linguage.title}</div>
-        
         );
       })}
+      </div>
+      <div className="card">
+        <h2>HTML</h2>
+        <p>HTML (HyperText Markup Language) è il linguaggio standard per creare pagine e applicazioni web. Struttura il contenuto web e fornisce elementi di base come titoli, paragrafi e immagini.</p>
       </div>
     </div>
   </div>
