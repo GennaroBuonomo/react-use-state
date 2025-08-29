@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const languages = [
   {
     id: 1,
@@ -32,7 +34,7 @@ const languages = [
 ];
 
 function App() {
-  
+  const [Language,setLanguage] = useState(languages[0])
   return (
   <div className="container my-5">
     <div className="row">
