@@ -32,6 +32,7 @@ const languages = [
 ];
 
 function App() {
+  
   return (
   <div className="container my-5">
     <div className="row">
@@ -42,9 +43,11 @@ function App() {
         );
       })}
       </div>
-      <div className="card">
-        <h2>HTML</h2>
-        <p>HTML (HyperText Markup Language) è il linguaggio standard per creare pagine e applicazioni web. Struttura il contenuto web e fornisce elementi di base come titoli, paragrafi e immagini.</p>
+      <div className="col-12 mt-4">
+       <div className="card p-3">
+         <h2>HTML</h2>
+         <p>HTML (HyperText Markup Language) è il linguaggio standard per creare pagine e applicazioni web. Struttura il contenuto web e fornisce elementi di base come titoli, paragrafi e immagini.</p>
+       </div>
       </div>
     </div>
   </div>
